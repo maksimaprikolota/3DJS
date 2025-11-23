@@ -1,0 +1,282 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+.block {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
+    background: #f7f8fa;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.block h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+
+.block p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+.buttons a {
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+
+.btn1 {
+    background: #2563eb;
+    color: #fff;
+    border: 2px solid #2563eb;
+}
+
+.btn1:hover {
+    background: #1e4fc7;
+}
+
+
+.btn2 {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn2:hover {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.block2 {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
+    background: #f7f8fa;
+    border-radius: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    font-family: "Inter", sans-serif;
+}
+
+
+.block2-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+
+.block2-right {
+    max-width: 480px;
+}
+
+.block2-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin: 0 0 30px;
+}
+
+
+.services {
+    width: 100%;
+    max-width: 1100px;
+    margin: 100px auto;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+
+.services-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+
+.services-subtitle {
+    font-size: 16px;
+    color: #4b5563;
+    margin-bottom: 60px;
+}
+
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 60px;
+}
+
+
+.service-item {
+    width: 280px;
+    text-align: center;
+}
+
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px; 
+    background: #ff7a1a22; 
+    border: 2px solid #ff7a1a;
+    margin: 0 auto 20px;
+}
+
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+
+.service-item p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+/* Секция Followers */
+.followers {
+    max-width: 1100px;
+    margin: 80px auto;
+    font-family: "Inter", sans-serif;
+}
+
+.followers-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 30px;
+}
+
+/* Сетка карточек */
+.followers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 24px;
+}
+
+/* Карточка */
+.follower-card {
+    flex: 1 1 30%;
+    min-width: 260px;
+    max-width: 340px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 18px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* Левая часть (аватар + текст) */
+.follower-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Аватар-заглушка */
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f97316, #3b82f6);
+}
+
+/* Имя и страна */
+.name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.location {
+    font-size: 13px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Точка вместо иконки гео */
+.location .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6b7280;
+}
+
+/* Кнопка Follow */
+.follow-btn {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #111827;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.follow-btn:hover {
+    border-color: #111827;
+}
+
+/* Активный фолловер */
+.follow-btn.active {
+    border-color: #10b981;
+    color: #10b981;
+    background: #ecfdf5;
+}
+
+.follow-btn .check {
+    margin-right: 4px;
+}
+
+
